@@ -16,6 +16,8 @@ public class EventSystemTest : MonoBehaviour, IPointerClickHandler {
 
 	public void OnPointerClick (PointerEventData eventData) {
 
+		Debug.Log (eventData);
+
 		if(Time.timeScale <= 0) {
 			this._StartRotate();
 		} else {
